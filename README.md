@@ -1,6 +1,6 @@
 # Ape Gnosis
 
-TODO: Description
+Adds Gnosis Chain support to Ape CLI.
 
 ## Dependencies
 
@@ -8,22 +8,24 @@ TODO: Description
 
 ## Installation
 
-### via `pip`
-
-You can install the latest release via [`pip`](https://pypi.org/project/pip/):
+### via `ape install`
 
 ```bash
-pip install <PYPI_NAME>
+ape install plugin gnosis
 ```
 
-### via `setuptools`
+### via `ape-config.yaml`
 
-You can clone the repository and use [`setuptools`](https://github.com/pypa/setuptools) for the most up-to-date version:
+```yaml
+plugins:
+  - name: gnosis
+```
+
+### via `pip`
 
 ```bash
-git clone https://github.com/ApeWorX/<PYPI_NAME>.git
-cd <PYPI_NAME>
-python3 setup.py install
+cd ape-gnosis
+python -m pip install . --user
 ```
 
 ## Quick Usage
