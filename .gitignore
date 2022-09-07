@@ -119,6 +119,8 @@ dmypy.json
 
 # setuptools-scm
 version.py
+ape-gnosis/version.py
+
 
 # Ape stuff
 .build/

@@ -42,27 +42,27 @@ with open("./README.md") as readme:
 
 
 setup(
-    name="<PYPI_NAME>",
+    name="ape-gnosis",
     use_scm_version=True,
     setup_requires=["setuptools_scm"],
-    description="""<PYPI_NAME>: <SHORT_DESCRIPTION>""",
+    description="""ape-gnosis: Gnosis Ecosystem Plugin for Ape""",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    author="ApeWorX Ltd.",
-    author_email="admin@apeworx.io",
-    url="https://github.com/ApeWorX/<REPO_NAME>",
+    author="Jalil A. Farid",
+    author_email="jrab227@gmail.com",
+    url="https://github.com/jfarid27/ape-gnosis",
     include_package_data=True,
     install_requires=[
         "importlib-metadata ; python_version<'3.8'",
     ],  # NOTE: Add 3rd party libraries here
     python_requires=">=3.7,<4",
     extras_require=extras_require,
-    py_modules=["<MODULE_NAME>"],
+    py_modules=["ape-gnosis"],
     license="Apache-2.0",
     zip_safe=False,
     keywords="ethereum",
     packages=find_packages(exclude=["tests", "tests.*"]),
-    package_data={"<MODULE_NAME>": ["py.typed"]},
+    package_data={"ape-gnosis": ["py.typed"]},
     classifiers=[
         "Development Status :: 4 - Beta",
         "Intended Audience :: Developers",
