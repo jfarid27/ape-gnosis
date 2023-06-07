@@ -5,13 +5,13 @@ from ape_ethereum.ecosystem import Ethereum, NetworkConfig
 NETWORKS = {
     # chain_id, network_id
     "mainnet": (100, 100),
-    "optimism": (300, 300),
+    "chiado": (10200, 10200),  # testnet
 }
 
 
 class GnosisConfig(PluginConfig):
     mainnet: NetworkConfig = NetworkConfig(required_confirmations=1, block_time=2)  # type: ignore
-    optimism: NetworkConfig = NetworkConfig(required_confirmations=1, block_time=2)  # type: ignore
+    chiado: NetworkConfig = NetworkConfig(required_confirmations=1, block_time=2)  # type: ignore
     local: NetworkConfig = NetworkConfig(default_provider="test")  # type: ignore
     default_network: str = LOCAL_NETWORK_NAME
 
