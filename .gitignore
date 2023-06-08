@@ -119,7 +119,7 @@ dmypy.json
 
 # setuptools-scm
 version.py
-ape-gnosis/version.py
+ape_gnosis/version.py
 
 
 # Ape stuff

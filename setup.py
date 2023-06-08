@@ -8,6 +8,7 @@ extras_require = {
         "pytest-xdist",  # multi-process runner
         "pytest-cov",  # Coverage analyzer plugin
         "hypothesis>=6.2.0,<7.0",  # Strategy-based fuzzer
+        "eth-ape>0.6.9",  # ape for testing
     ],
     "lint": [
         "black>=22.3.0,<23.0",  # auto-formatter and linter
@@ -29,7 +30,7 @@ extras_require = {
     ],
 }
 
-# NOTE: `pip install -e .[dev]` to install package
+# NOTE: `pip install -e .[dev]` or `pip install -e .\[dev\]` to install package
 extras_require["dev"] = (
     extras_require["test"]
     + extras_require["lint"]
