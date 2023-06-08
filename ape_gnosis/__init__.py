@@ -21,10 +21,10 @@ def ecosystems():
 def networks():
     for network_name, network_params in NETWORKS.items():
         yield "gnosis", network_name, create_network_type(*network_params)
+        yield "gnosis", f"{network_name}-fork", NetworkAPI
 
     # NOTE: This works for development providers, as they get chain_id from themselves
     yield "gnosis", LOCAL_NETWORK_NAME, NetworkAPI
-    yield "gnosis", "mainnet-fork", NetworkAPI
 
 
 @plugins.register(plugins.ProviderPlugin)
